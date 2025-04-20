@@ -189,8 +189,8 @@ export default function Dashboard() {
 				</div>
 			</header>
 
-			<div className="xl:w-[1280px] mx-auto pt-8 py-16 px-4">
-				<div className="grid grid-cols-3 gap-4">
+			<div className="xl:w-[1280px] mx-auto pt-6 py-16 px-4">
+				<div className="grid xl:grid-cols-3 gap-4">
 					<Card className={cn("@container/card", data.detail.kategori === "Baik" ? "bg-green-700 text-slate-50 border-green-500" : data.detail.kategori === "Normal" ? "bg-yellow-600 text-slate-50 border-yellow-500" : data.detail.kategori === "Buruk" ? "bg-red-700 text-slate-50 border-red-500" : "")}>
 						<CardHeader className="relative">
 							<CardDescription className={cn(data.detail.kategori && "text-slate-50")}>Status Air Kolam</CardDescription>
@@ -225,7 +225,7 @@ export default function Dashboard() {
 					</Card>
 				</div>
 
-				<div className="grid grid-cols-2 mt-4 gap-4">
+				<div className="grid xl:grid-cols-2 mt-4 gap-4">
 					<Card className="@container/card">
 						<CardHeader className="relative">
 							<CardTitle>Sensor Ph Air</CardTitle>
