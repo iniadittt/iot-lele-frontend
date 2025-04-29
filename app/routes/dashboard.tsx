@@ -22,7 +22,7 @@ interface DataDetailSensorType {
 	ph: number;
 	kekeruhan: number;
 	skor: number;
-	kategori: "Baik" | "Normal" | "Buruk" | null;
+	kategori: "Baik" | "Sedang" | "Buruk" | null;
 	createdAt: Date | null;
 }
 
@@ -191,7 +191,7 @@ export default function Dashboard() {
 
 			<div className="xl:w-[1280px] mx-auto pt-6 py-16 px-4">
 				<div className="grid xl:grid-cols-3 gap-4">
-					<Card className={cn("@container/card", data.detail.kategori === "Baik" ? "bg-green-700 text-slate-50 border-green-500" : data.detail.kategori === "Normal" ? "bg-yellow-600 text-slate-50 border-yellow-500" : data.detail.kategori === "Buruk" ? "bg-red-700 text-slate-50 border-red-500" : "")}>
+					<Card className={cn("@container/card", data.detail.kategori === "Baik" ? "bg-green-700 text-slate-50 border-green-500" : data.detail.kategori === "Sedang" ? "bg-yellow-600 text-slate-50 border-yellow-500" : data.detail.kategori === "Buruk" ? "bg-red-700 text-slate-50 border-red-500" : "")}>
 						<CardHeader className="relative">
 							<CardDescription className={cn(data.detail.kategori && "text-slate-50")}>Status Air Kolam</CardDescription>
 							<CardTitle className="@[250px]/card:text-3xl text-2xl font-semibold tabular-nums">{data?.detail?.kategori ?? "-"}</CardTitle>
