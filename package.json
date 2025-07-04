@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "react-router build",
 		"dev": "react-router dev",
-		"start": "cross-env PORT=9003 react-router-serve ./build/server/index.js",
+		"start": "cross-env PORT=3001 react-router-serve ./build/server/index.js",
 		"typecheck": "react-router typegen && tsc"
 	},
 	"dependencies": {
